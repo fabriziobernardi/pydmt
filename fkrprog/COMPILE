@@ -1,0 +1,6 @@
+FKRPROG:      cd src/fkrpog
+              gfortran -O3 FKRPROG.f -o FKRPROG
+              or
+              g77 -ff90 -O3 FKRPROG.f -o FKRPROG
+              mv FKRPROG ../bin
+
