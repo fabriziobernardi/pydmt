@@ -117,7 +117,7 @@ def plotMTfit(st,gr,mt,Tb,Te,args):
        
            # plot focal mechanism
         u = 10 
-        np11 = [float(np1[0]),float(np1[1]),float(np1[2])+360.]
+        np11 = [float(np1[0]),float(np1[1]),float(np1[2])]
         ax0=plt.subplots_adjust(top=1.0)
         ax0=fig.add_subplot(u,3,0)
         ax0 = pylab.axis('off')
