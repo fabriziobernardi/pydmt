@@ -23,9 +23,11 @@ def LoadObserved(args):
   # mseed
   if(args.mseed != "None"):
     try:
-       mse = read(args.mseed)
+#      mse = read(args.mseed)
+       mse = read(os.path.join(args.mseed + os.sep , '*.mseed'))
     except:
-       print args.mseed + " Not found"
+#      print args.mseed + " Not found"
+       print "mseed files not found"
        sys.exit()
 
   # sac binary
